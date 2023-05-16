@@ -58,6 +58,7 @@ async def uplodedData(Client,message):
   caption = message.caption
   splitC= caption.split("|")
   movieName = splitC[0]
+  movieName = movieName.lower()
   title = splitC[1]
   chanelId=message.chat.id
   messageId=message.id
